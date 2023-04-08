@@ -1,0 +1,105 @@
+<!DOCTYPE  html>
+
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>九宫格布局grid实现</title>
+
+    <style type="text/css">
+        .ss0{
+            text-align: center;
+            line-height: 200px;
+        }
+        .square {
+
+            position: relative;
+
+            width: 90%;
+
+            padding-bottom: 100%;   /* padding百分比是相对父元素宽度计算的 */
+
+        }
+
+        .square-inner {
+
+            position: absolute;
+
+            top: 0;
+
+            left: 0;
+
+            width: 100%;
+
+            height: 100%;
+
+            /* 铺满父元素容器，这时候宽高就始终相等了  */
+
+        }
+
+        .grid {
+
+            display: grid; /*网格布局*/
+
+            grid-template-columns: repeat(3,  1fr);
+
+            grid-template-rows: repeat(3,  1fr);
+
+            grid-gap: 2%;
+
+            grid-auto-flow: column;
+
+            /*通过行或列的方式来依次填充*/
+
+        }
+
+        .grid>div {
+
+            color: #fff;
+
+            font-size: 50px;
+
+            text-align: center;
+
+            background: #FF9999;
+
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div >
+
+    <div class="square-inner  grid" style="width: 75%;height: 75%;margin-left: 14%;margin-top: 6%">
+
+        <div class="ss0">签到管理</div>
+
+        <div class="ss0">积分管理</div>
+
+        <div class="ss0">答题管理</div>
+
+        <div class="ss0">考试管理</div>
+
+        <div class="ss0">首页</div>
+
+        <div class="ss0">学生管理</div>
+
+        <div class="ss0">题库管理</div>
+
+        <div class="ss0">文章管理</div>
+
+        <div class="ss0">系统管理</div>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>

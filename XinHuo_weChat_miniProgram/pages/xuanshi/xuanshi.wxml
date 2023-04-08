@@ -1,0 +1,6 @@
+<!--pages/xuanshi/xuanshi.wxml-->
+<view class="login-box">
+        <image class="img" src='http://evinci.oss-cn-hangzhou.aliyuncs.com/evinci/我的——我要宣誓——背景图.png' mode="widthFix">
+        </image>
+        <text class="num">您是第<text>{{myTime}}</text>次宣誓，这是第<text>{{sumTime}}</text>次宣誓</text>
+</view>

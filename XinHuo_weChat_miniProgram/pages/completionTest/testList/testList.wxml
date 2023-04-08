@@ -1,0 +1,13 @@
+<view class="root">
+    <view class="total_title">考试列表</view>
+    <view wx:for="{{testList}}" >
+        <view class="test_list" bindtap="goTotest" 
+        data-paperid="{{item.id}}">
+            <image class="list_image" src="http://evinci.oss-cn-hangzhou.aliyuncs.com/evinci/主页-结业测试-考试列表.png"></image>
+            <view class="list_detail" >
+                <text class="detail_title">{{item.title}}</text>
+                <text class="detail_content">测试开始时间：{{testTime[index]}}</text>
+            </view>
+        </view>
+    </view>
+</view>
